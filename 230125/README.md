@@ -30,4 +30,19 @@ Img file change (ex. test.jpg > test.txt), showing only text
 2) npm install express cors nunjucks
 3) app.get single, array, upload
 4) enctype
+- x-www-urlencoded 
+- multipart-form-data
 
+Content-Type different is change body-parser.
+
+#### Add to extension module
+```sh
+npm install multer
+```
+multer in console.log
+upload is multer Multer {
+  storage: MemoryStorage {},
+  limits: undefined,
+  preservePath: undefined,
+  fileFilter: [Function: allowAll]
+}
