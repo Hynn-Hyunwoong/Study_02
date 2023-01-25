@@ -14,6 +14,10 @@ app.get("/single", (req,res) => {
     res.render('single.html')
 })
 
+app.post("/single", (req,res) => {
+    res.send("upload")
+})
+
 app.get("/array", (req,res) => {
     res.render('array.html')
 })
@@ -21,6 +25,8 @@ app.get("/array", (req,res) => {
 app.get("/upload", (req,res) => {
     res.render('upload.html')
 })
+
+
 
 
 app.listen(3000,()=>{

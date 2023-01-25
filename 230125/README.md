@@ -28,3 +28,6 @@ Img file change (ex. test.jpg > test.txt), showing only text
 
 1) npm init -y
 2) npm install express cors nunjucks
+3) app.get single, array, upload
+4) enctype
+
