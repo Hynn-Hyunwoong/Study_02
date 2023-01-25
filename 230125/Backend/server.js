@@ -10,12 +10,12 @@ nunjucks.configure("views", {express: app,});
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended : false}));
-app.use((req,res,next)=>{
-    req.headers["content-type"] === 'application/json'
+// app.use((req,res,next)=>{
+//     req.headers["content-type"] === 'application/json'
 
-    req.body = 
-    next()
-})
+//     req.body = 
+//     next()
+// })
 
 app.get("/single", (req,res) => {
     res.render('single.html')
@@ -25,11 +25,12 @@ app.get("/single", (req,res) => {
 //     res.send("upload")
 // })
 
-app.post((req,res,next)=>{
+app.post('/single', upload.single("upload"), (req,res)=>{
+    console.log('req.file',req.file)
+    console.log('req.body',req.body)
     console.log("Hi New middleware")
     res.send("completed upload")
     // req.body = ''
-    next()
 })
 
 app.get("/array", (req,res) => {

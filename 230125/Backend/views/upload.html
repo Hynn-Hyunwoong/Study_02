@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page</title>
+</head>
+<body>
+    <h2>Single Upload</h2>
+    <!-- enctype : Content-type optional, default-type : x-www-form-urlencoded  -->
+    <form method="post" action="/single" enctype="multipart/form-data">
+        <ul>
+            <li>
+                <input type="text" name="subject">
+            </li>
+            <li>
+                <input type="file" name="upload">
+            </li>
+            <li>
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

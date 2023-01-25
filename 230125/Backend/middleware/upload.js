@@ -10,7 +10,7 @@ const upload = multer({
             // usage path library 
             // Protect duplicate file-name
             // 기준 파일 : 1.jpg
-            const ext = path.extname(file.originalname); // JPG
+            const ext = path.extname(file.originalname) // JPG
             const basename = path.basename(file.originalname, ext);
             const filename = `${basename}_${Date.now()}${ext}`
             done(null, filename);
@@ -75,3 +75,13 @@ module.exports = upload
 //   limits: undefined,
 //   preservePath: undefined,
 //   fileFilter: [Function: allowAll]
+
+
+
+
+
+
+
+
+
+
