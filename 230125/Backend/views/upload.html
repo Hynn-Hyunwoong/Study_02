@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page</title>
+    <title>Upload Page</title>
 </head>
 <body>
-    <h2>Single Upload</h2>
+    <h2>Upload Upload</h2>
     <!-- enctype : Content-type optional, default-type : x-www-form-urlencoded  -->
-    <form method="post" action="/single" enctype="multipart/form-data">
+    <form method="post" action="/upload" enctype="multipart/form-data">
         <ul>
             <li>
                 <input type="text" name="subject">
             </li>
             <li>
-                <input type="file" name="upload">
+                <input type="file" name="upload1">
+                <input type="file" name="upload2">
+                <input type="file" name="upload3">
+                <input type="file" name="upload4"> 
             </li>
             <li>
                 <button type="submit">Submit</button>

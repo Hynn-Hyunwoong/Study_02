@@ -21,7 +21,7 @@ const upload = multer({
         }   
 
     }),
-    limits : {fileSize : 5 * 1024 * 1024 } // 5MB 
+    limits : {fileSize : 25 * 1024 * 1024 } // 5MB 
     // 1024byte = 1KB 1KB * 1024byte = 1MB * 5 = 5MB
     // 1byte = 1bit
     // 1KB = 1024byte

@@ -1,0 +1,24 @@
+{
+  "name": "vscode_02",
+  "version": "1.0.0",
+  "description": "이 공간은 개인 공부기록의 흔적을 남기는 공간입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hynn-Hyunwoong/Study_02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hynn-Hyunwoong/Study_02/issues"
+  },
+  "homepage": "https://github.com/Hynn-Hyunwoong/Study_02#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nunjucks": "^3.2.3"
+  }
+}

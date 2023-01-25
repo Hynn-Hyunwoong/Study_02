@@ -28,7 +28,6 @@ app.get("/single", (req,res) => {
 app.post('/single', upload.single("upload"), (req,res)=>{
     console.log('req.file',req.file)
     console.log('req.body',req.body)
-    console.log("Hi New middleware")
     res.send("completed upload")
     // req.body = ''
 })
@@ -37,10 +36,23 @@ app.get("/array", (req,res) => {
     res.render('array.html')
 })
 
+app.post('/array', upload.array("upload"), (req,res)=>{
+    console.log('arr req.files',req.files)
+    console.log('arr req.body',req.body)
+    res.send("completed upload for array")
+    // req.body = ''
+})
+
 app.get("/upload", (req,res) => {
     res.render('upload.html')
 })
 
+app.post('/upload', upload.fields([{name: 'upload1'},{name: 'upload2'},{name: 'upload3'},{name: 'upload4'}]), (req,res)=>{
+    console.log('arr req.files',req.files)
+    console.log('arr req.body',req.body)
+    res.send("completed upload for array")
+    // req.body = ''
+})
 
 
 
